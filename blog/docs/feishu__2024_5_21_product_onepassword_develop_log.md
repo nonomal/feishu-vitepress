@@ -79,7 +79,7 @@ JwtModule.registerAsync({
 
  参考：https://segmentfault.com/a/1190000021494676
 
-<img src="/assets/JBBabFfzZohIlExlWBocGOrpnIg.png" src-width="1704" class="m-auto" src-height="1424" align="center"/>
+<img src="/assets/JBBabFfzZohIlExlWBocGOrpnIg.png" src-width="1704" class="markdown-img m-auto" src-height="1424" align="center"/>
 
 ### 1password原理
 
@@ -93,17 +93,17 @@ JwtModule.registerAsync({
 
 白皮书：
 
-<img src="/assets/At63bOjRSoIUEBxvtAccTZgknke.png" src-width="7199" class="m-auto" src-height="3141" align="center"/>
+<img src="/assets/At63bOjRSoIUEBxvtAccTZgknke.png" src-width="7199" class="markdown-img m-auto" src-height="3141" align="center"/>
 
  master_key和secert key
 
-<img src="/assets/G7DXbB2uuo5caFxIu6kc5Dcentd.png" src-width="856" class="m-auto" src-height="240" align="center"/>
+<img src="/assets/G7DXbB2uuo5caFxIu6kc5Dcentd.png" src-width="856" class="markdown-img m-auto" src-height="240" align="center"/>
 
 这里用到一个叫dh算法的概念：
 
 这里有个视频讲的好：https://www.bilibili.com/video/BV1sY4y1p78s/?spm_id_from=333.788&vd_source=1cfe4f7c9bf04285f79b848e60f55aea
 
-<img src="/assets/I6yUb3XtLoTviQxgZQycnejwnEe.png" src-width="828" class="m-auto" src-height="355" align="center"/>
+<img src="/assets/I6yUb3XtLoTviQxgZQycnejwnEe.png" src-width="828" class="markdown-img m-auto" src-height="355" align="center"/>
 
  流程如下：
 
@@ -140,7 +140,7 @@ JwtModule.registerAsync({
 
 # 2024-6-27
 
-## 初始化密码功能
+## 初始化密码功能(完成）
 
 软件启动时检查本地有没有生成scert.key,如果没有，弹出对话框,让用户输入初始密码，
 
@@ -150,27 +150,146 @@ JwtModule.registerAsync({
 
 将用户名和B存到数据库中（本地数据库）
 
-# 2024-7-1
+# 2024-7-29
 
-新建一个user表用于存储用户信息，和加密后的key_hash
+不知道改了啥，一启动就崩
 
-建一个保险库表：vault
+<img src="/assets/Ye7AbkgV2oPMmXx4S5Mc0Xvzn1y.gif" src-width="1420" class="markdown-img m-auto" src-height="874" align="center"/>
 
-保险库中存对应的密码信息：vault_item
+本来想使用electron捕捉的crash文件来分析，但发现有点麻烦，没有一个开箱即用的工具。
 
-1、home主页：
+还好现在代码比较简单，直接加日志跟进。发现是因为调用node.js的密码解密时崩溃
 
-保险库列表：
+<img src="/assets/IRvrbpjHcoo8K8x8NK7cKBYfn2c.png" src-width="1289" class="markdown-img m-auto" src-height="196" align="center"/>
 
-展示如右：
+decode时没有判断空
 
-<img src="/assets/WBi6bR2SZouWc0xZbNycC57Gnlf.png" src-width="821" class="m-auto" src-height="242" align="center"/>
+<img src="/assets/XFpEbwTo8o1CxnxDDGLc7RbRntz.png" src-width="556" class="markdown-img m-auto" src-height="265" align="center"/>
 
-可以，修改，设置和删除
+## 定时自动锁定功能(完成)
 
-2、点进入，可以进入账号列表
+## 关闭默认缩小到托盘（完成）
 
-类似这样：上方可以直接切换密码库：
+# 保险库功能
 
-<img src="/assets/EfR0b1Gq7oANjPxpnppc1J1VnOf.png" src-width="1185" class="m-auto" src-height="512" align="center"/>
+图标：
+
+<img src="/assets/DLDWbaGn9oy3v3xiwknciUBYnVb.jpeg" src-width="580" class="markdown-img m-auto" src-height="580" align="center"/>
+
+<img src="/assets/CTlUbkakPosg2IxOKmpcK5s8nRe.gif" src-width="918" class="markdown-img m-auto" src-height="614" align="center"/>
+
+## 新增保密信息（完成）
+
+<img src="/assets/WbyrbyGbvozOSwxzaw6cobZMnfh.gif" src-width="874" class="markdown-img m-auto" src-height="654" align="center"/>
+
+## 保密信息预览（完成）
+
+<img src="/assets/Nh66bJQJuo1F57xAefxcwtbMnAc.gif" src-width="974" class="markdown-img m-auto" src-height="728" align="center"/>
+
+## 保密信息编辑（完成）
+
+<img src="/assets/UMy1bhJ9KojpUaxa5JVciPs4nEd.gif" src-width="878" class="markdown-img m-auto" src-height="652" align="center"/>
+
+# 用户设置功能（完成）
+
+<img src="/assets/VC5cb3xESoWfwIxRQiFcpuM4njf.gif" src-width="872" class="markdown-img m-auto" src-height="612" align="center"/>
+
+# 
+# 密码生成（完成）
+
+<img src="/assets/U7Q0baB1Hodz1Cx9k4gc55isnId.gif" src-width="1028" class="markdown-img m-auto" src-height="656" align="center"/>
+
+# 异常错误
+
+Module "path" has been externalized for browser compatibility. Cannot access "path.join" in client code
+
+今天改代码，不知道改了什么地方，搞出这个报错，render启动不起来了。
+
+看意思好像是render代码引用 了node.js的一些库。
+
+但我找了半天也没找到具体是哪个代码引入的。从堆栈看不出来
+
+<img src="/assets/TazTbeMzIo0pWexXXxncSQkgnYd.png" src-width="1291" class="markdown-img m-auto" src-height="234" align="center"/>
+
+通过一句句代码的排查，终于找到了，自动导入太坑人了
+
+<img src="/assets/Wty7bfCFMojk7KxR1Abc7GaWned.png" src-width="740" class="markdown-img m-auto" src-height="428" align="center"/>
+
+# todo
+
+## tray托盘
+
+<img src="/assets/Wkzubf4d4oNgVSxptqQcISzunqB.png" src-width="250" class="markdown-img m-auto" src-height="168" align="center"/>
+
+## 导入：
+
+<img src="/assets/AE97bcGHuolw4MxMZ5Jcxo3xnVd.png" src-width="383" class="markdown-img m-auto" src-height="717" align="center"/>
+
+<img src="/assets/QA4cbE3PmooTPmxCnISc3EEynNh.png" src-width="393" class="markdown-img m-auto" src-height="593" align="center"/>
+
+## 导出
+
+<img src="/assets/RQYSbPggmopyNrxDlrkcUU6qnGc.png" src-width="414" class="markdown-img m-auto" src-height="189" align="center"/>
+
+## 自动输入
+
+需要使用robotjs
+
+启动时报错，提示版本不对：
+
+<img src="/assets/JpVFbjIhVoHtfNxIfPWckQIingg.png" src-width="516" class="markdown-img m-auto" src-height="292" align="center"/>
+
+需要重新编译，有说明文档
+
+https://github.com/octalmage/robotjs/wiki/Electron
+
+意思是说两边用的node.js编译版本不一样，electron用的是119
+
+robotjs用的是115
+
+这里可以看node.js对应的版本号：
+
+https://github.com/mapbox/node-pre-gyp/blob/master/lib/util/abi_crosswalk.json
+
+可以看到115对应node.js  20.15.0
+
+<img src="/assets/WNiebcGwQoXrzrxV3kvcMWoAnBp.png" src-width="502" class="markdown-img m-auto" src-height="119" align="center"/>
+
+<img src="/assets/JYkUbHRq7oGyS1xj2o3cqk2VnQc.png" src-width="756" class="markdown-img m-auto" src-height="587" align="center"/>
+
+<img src="/assets/LuVbbFIrAotm1xxDNezcVY4Dnyc.png" src-width="555" class="markdown-img m-auto" src-height="218" align="center"/>
+
+<img src="/assets/Wr1kb2TVvo4mJCxwjVHcwv8znvf.png" src-width="577" class="markdown-img m-auto" src-height="129" align="center"/>
+
+<img src="/assets/BAxfbJ87To6Cp1x5V88czUywnSz.png" src-width="644" class="markdown-img m-auto" src-height="272" align="center"/>
+
+## 关于
+
+<img src="/assets/PV7HbHWv0oAMDYxXfeYcP0uinsc.png" src-width="732" class="markdown-img m-auto" src-height="577" align="center"/>
+
+## 多账号支持
+
+账号信息
+
+<img src="/assets/ILinblXTOou4tfxXs4KcoIdunjd.png" src-width="703" class="markdown-img m-auto" src-height="518" align="center"/>
+
+## 软件更新
+
+数据库更新
+
+软件更新
+
+## 密钥生成流程优化
+
+<img src="/assets/EJLKbxFWbonNFwx3aVbchY9Mnme.png" src-width="528" class="markdown-img m-auto" src-height="278" align="center"/>
+
+<img src="/assets/Bxeab3ihVoQ2v8xeCiZcRuqnnmd.png" src-width="394" class="markdown-img m-auto" src-height="341" align="center"/>
+
+## 修改密码
+
+## 修改密钥
+
+## 其它设备上如何登陆
+
+<img src="/assets/EH5IbCktvoxMgHxiEV2cbtown3e.png" src-width="421" class="markdown-img m-auto" src-height="543" align="center"/>
 

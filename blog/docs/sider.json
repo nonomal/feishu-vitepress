@@ -32,7 +32,14 @@
       },
       {
         "text": "软件破解",
-        "link": "/feishu__2024_4_19_skill_crack"
+        "link": "/feishu__2024_4_19_skill_crack",
+        "items": [
+          {
+            "text": "怎么破解android包",
+            "link": "/feishu__2024_6_31_skill_crack_android"
+          }
+        ],
+        "collapsed": false
       },
       {
         "text": "Electron 开发学习",
@@ -43,7 +50,8 @@
         "link": "/feishu__2024_4_28_skill_rustdesk"
       },
       {
-        "text": "网站的seo加强"
+        "text": "网站的seo加强",
+        "link": "/feishu__2024_4_30_skill_website_seo"
       },
       {
         "text": "学飞源码",
@@ -66,12 +74,45 @@
       {
         "text": "duckdb学习",
         "link": "/feishu__2024_5_12_skill_duckdb"
+      },
+      {
+        "text": "unity 学习笔记",
+        "items": [
+          {
+            "text": "unity 内存分析工具",
+            "link": "/feishu__2024_6_17_skill_unity_unity_mem_profiler"
+          },
+          {
+            "text": "定制unity profiler指标",
+            "link": "/feishu__2024_6_22_skill_unity_unity_profiler"
+          },
+          {
+            "text": "unity 内存定制内存分配",
+            "link": "/feishu__2024_6_24_skill_unity_unity_customize_mem_allocator"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "加密与解密",
+        "link": "/feishu__2024_6_27_skill_encrypt"
+      },
+      {
+        "text": "node.js学习",
+        "link": "/feishu__2024_6_29_skill_node"
       }
     ],
     "collapsed": false
   },
   {
-    "text": "生活"
+    "text": "生活",
+    "items": [
+      {
+        "text": "历史",
+        "link": "/feishu__2024_6_20_daily_life_history"
+      }
+    ],
+    "collapsed": false
   },
   {
     "text": "运动"
@@ -180,6 +221,42 @@
       {
         "text": "从姜萍事件我看到的人性丑陋",
         "link": "/feishu__2024_6_2_other_platform_2024-7-2"
+      },
+      {
+        "text": "打破互联网巨头的数字殖民",
+        "link": "/feishu__2024_6_6_other_platform_2024-7-6"
+      },
+      {
+        "text": "上个破班，别把自己搭进去",
+        "link": "/feishu__2024_6_6_other_platform_2024-7-7"
+      },
+      {
+        "text": "3分钟开通openai plus账号教程（2024年亲测有效）",
+        "link": "/feishu__2024_6_10_other_platform_2024-7-10"
+      },
+      {
+        "text": "选择比努力重要",
+        "link": "/feishu__2024_6_20_other_platform_2024-7-20"
+      },
+      {
+        "text": "中国奥运代表团的精心准备：带空调出征巴黎",
+        "link": "/feishu__2024_6_20_other_platform_2024-7-21"
+      },
+      {
+        "text": "用飞书写个人博客",
+        "link": "/feishu__2024_6_22_other_platform_2024-7-22"
+      },
+      {
+        "text": "董宇辉：从打工者到老板的华丽转身",
+        "link": "/feishu__2024_6_25_other_platform_2024-7-25"
+      },
+      {
+        "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
+        "link": "/feishu__2024_6_26_other_platform_2024-7-26"
+      },
+      {
+        "text": "乐怡，希望你能有不一样的人生",
+        "link": "/feishu__2024_6_29_other_platform_2024-7-29"
       }
     ],
     "collapsed": false

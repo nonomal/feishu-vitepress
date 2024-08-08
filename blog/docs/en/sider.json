@@ -1,48 +1,164 @@
 [
   {
-    "text": "学技术",
+    "text": "Homepage",
+    "link": "/index"
+  },
+  {
+    "text": "Learning Technology",
     "items": [
       {
-        "text": "vim学习笔记",
-        "link": "/en/feishu__2023_1_21_skill_vim"
+        "text": "vim study notes",
+        "link": "/feishu__2023_1_21_skill_vim"
+      },
+      {
+        "text": "Nginx",
+        "link": "/feishu__2024_3_25_skill_nginx"
+      },
+      {
+        "text": "github related learning",
+        "link": "/feishu__2024_3_26_skill_github"
+      },
+      {
+        "text": "Qinglong Automation Tool (Automatic Operation and Maintenance)",
+        "link": "/feishu__2024_3_26_skill_qinglong_auto"
+      },
+      {
+        "text": "C# language learning",
+        "link": "/feishu__2024_4_7_skill_c_sharp"
+      },
+      {
+        "text": "android_mem",
+        "link": "/feishu__2024_4_17_skill_android_mem"
+      },
+      {
+        "text": "Software Crack",
+        "link": "/feishu__2024_4_19_skill_crack"
+      },
+      {
+        "text": "Electron development learning",
+        "link": "/feishu__2024_4_23_skill_electron"
+      },
+      {
+        "text": "Rustdesk use",
+        "link": "/feishu__2024_4_28_skill_rustdesk"
+      },
+      {
+        "text": "Website seo enhancement"
+      },
+      {
+        "text": "Xuefei source code",
+        "items": [
+{
+            "text": "vscode source code learning",
+            "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "crawler",
+        "link": "/feishu__2024_5_4_skill_spider"
+      },
+      {
+        "text": "vpn",
+        "link": "/feishu__2024_5_5_skill_vpn"
+      },
+      {
+        "text": "duckdb learning",
+        "link": "/feishu__2024_5_12_skill_duckdb"
       }
     ],
     "collapsed": false
   },
   {
-    "text": "生活"
+    "text": "life"
   },
   {
-    "text": "运动"
+    "text": "Sports"
   },
   {
-    "text": "理财"
+    "text": "Financial Management"
   },
   {
-    "text": "项目",
+    "text": "projects",
     "items": [
       {
-        "text": "我的博客-飞书博客",
+        "text": "My blog - Feishu blog transfer system",
         "items": [
           {
-            "text": "项目日志",
-            "link": "/en/feishu__2024_2_26_product_myblog_project_record"
-          },
-          {
-            "text": "飞书自动生成静态博客系统",
+            "text": "Feishu Blog-Project Introduction",
             "link": "/feishu__2024_3_7_product_myblog_intro"
           },
           {
-            "text": "演示",
+            "text": "Feishu Blog-Project Log",
+            "link": "/feishu__2024_2_26_product_myblog_project_record"
+          },
+          {
+            "text": "Feishu Blog-Demo",
             "link": "/feishu__2024_3_16_product_myblog_demo"
           },
           {
-            "text": "博客配置说明",
+"text": "Feishu Blog-Blog Configuration Instructions",
             "link": "/feishu__2024_3_16_product_myblog_blog_set"
           },
           {
-            "text": "github action自动化流程说明",
+            "text": "Feishu Blog-github action automation process description",
             "link": "/feishu__2024_3_16_product_myblog_github action intro"
+          },
+          {
+            "text": "Feishu Blog-Configuration of third-party tools",
+            "link": "/feishu__2024_3_25_product_myblog_third_lib"
+          },
+          {
+            "text": "Blog automatically synchronized to Alibaba Cloud",
+            "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Ronghaobao",
+        "items": [
+          {
+            "text": "Rong Xiaobao-Project Introduction",
+            "link": "/feishu__2024_4_28_product_bytefuse_intro"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Password pass",
+        "items": [
+          {
+            "text": "Password pass",
+            "link": "/feishu__2024_4_29_product_onepassword_intro"
+          },
+          {
+            "text": "Password Manager",
+            "link": "/feishu__2024_5_21_product_onepassword_develop_log"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "bugly analysis tool",
+        "items": [
+          {
+            "text": "bugly analysis tool description",
+            "link": "/feishu__2024_4_31_product_bugly_tool_intro"
+          },
+          {
+"text": "bugly analysis tool-development record",
+            "link": "/feishu__2024_5_3_product_bugly_tool_develop_log"
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "text": "Game performance detection tool",
+        "items": [
+          {
+            "text": "Game performance detection tool (instructions)"
           }
         ],
         "collapsed": false
@@ -51,7 +167,33 @@
     "collapsed": false
   },
   {
-    "text": "首页",
-    "link": "/en/index"
+    "text": "Other platforms",
+    "items": [
+      {
+        "text": "How to let AI assist you in writing articles",
+        "link": "/feishu__2024_5_12_other_platform_2024-6-12"
+      },
+      {
+        "text": "Why is it so difficult for Xia Chengxi to drop out of school?",
+        "link": "/feishu__2024_5_27_other_platform_2024-6-27"
+      },
+      {
+        "text": "I saw the ugliness of human nature from the Jiang Ping incident",
+        "link": "/feishu__2024_6_2_other_platform_2024-7-2"
+      },
+      {
+        "text": "Breaking the digital colonization of Internet giants",
+        "link": "/feishu__2024_6_6_other_platform_2024-7-6"
+      },
+      {
+        "text": "Don't get yourself into a bad class",
+        "link": "/feishu__2024_6_6_other_platform_2024-7-7"
+      },
+      {
+        "text": "Tutorial on opening an openai plus account in 3 minutes (valid for personal testing in 2024)",
+        "link": "/feishu__2024_6_10_other_platform_2024-7-10"
+      }
+    ],
+    "collapsed": false
   }
 ]
