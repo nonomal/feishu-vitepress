@@ -527,10 +527,6 @@
         "link": "/HCDNdDB7qomwIZxup8gcKECVnvh"
       },
       {
-        "text": "支付",
-        "link": "/N75SdBfawoccavxJ7xgcQE6xnrg"
-      },
-      {
         "text": "搞账号",
         "link": "/LiNBd8YZ6ogSIoxQR7mcJIRJnRg",
         "items": [
@@ -955,6 +951,35 @@
       {
         "text": "Ai drama",
         "link": "/WlSXdhghGo829kxw7HhcTkCNnFc"
+      },
+      {
+        "text": "运营",
+        "link": "/WyKYdOmUwoYJGlx9QUMcaotBn3f",
+        "items": [
+          {
+            "text": "种红 Seedred：对标 SuperX 做小红书创作者增长产品的可行性、收益与方案",
+            "link": "/XeXJdLUJ4oOjwnxULmicxCwnnAg",
+            "items": [
+              {
+                "text": "种红 Seedred 技术实现方案",
+                "link": "/YrlqdEuuzoYITrxXPGGc5zHyn9e"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "对标 Lovekey 做 AI 聊天回复键盘的可行性、收益与方案",
+            "link": "/KHEpdIyFwoqfuuxDlCWcuXhonZg",
+            "items": [
+              {
+                "text": "火候键盘：功能点与技术实现方案",
+                "link": "/SkBXdSKE5ogFRixVpqicZfAnnTd"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
