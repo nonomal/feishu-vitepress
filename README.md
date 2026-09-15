@@ -210,13 +210,4 @@ https://giscus.app/zh-CN
 
 
 # 问题反馈
-
-邮箱：whyzi@qq.com
-
-qq: 2246855973
-
-qq群： 572194495
-
-公众号
-
-![qrcode_for_gh_ece64bbdb799_258](https://github.com/user-attachments/assets/c8e715dd-4d7f-4b8d-884d-67a2c29961b9)
+ issue
