@@ -6,9 +6,11 @@ import { data } from "../posts.data.js";
 import { useCurrentCategoryKey, useCurrentPageKey } from "../configProvider";
 import ArticleCard from "./ArticleCard.vue";
 import { Post } from "../type_def.js";
-import { get_lang_text } from "../constant";
-import { SiteConfig } from "../site_config";
+import { get_lang_text, get_true_lan } from "../constant";
+// import { SiteConfig } from "../site_config";
+import { useBusuanzi } from "../utils/useBusuanzi";
 
+useBusuanzi("POST");
 const { lang } = useData();
 const router = useRouter();
 const location = useBrowserLocation();
@@ -18,16 +20,11 @@ const categoryKey = useCurrentCategoryKey()!;
 const isArticleListHitsFetched = ref<boolean>(false);
 const currentCategory = computed(() => categoryKey.value);
 const pageSize = 12;
-const posts = ref(
-  data.map((post) => ({
-    url: post.url,
-    title: post.title,
-    cover: post.cover,
-    date: post.date,
-    categories: post.categories || [],
-    hit: 0, // 添加 hit 字段并初始化为 0
-  })) as Post[],
-);
+
+const posts = computed(() => {
+  const true_lan = get_true_lan(lang.value);
+  return data.filter((post) => post.lanuage == true_lan);
+});
 
 const filteredPosts = computed(() => {
   // console.log("get posts", posts.value, "curtag", currentCategory.value);
@@ -40,7 +37,7 @@ const filteredPosts = computed(() => {
         )
       : posts.value;
     return filter_posts.sort((a, b) => {
-      return b.date.time - a.date.time;
+      return b.edit_time.time - a.edit_time.time;
     });
   }
 });
@@ -59,9 +56,6 @@ const articleList = computed(() => {
 
 const hasNextPage = computed(() => pageKey.value < pageTotal.value);
 const hasPrevPage = computed(() => pageKey.value > 1);
-const showHit = computed(() => {
-  return !!SiteConfig.get_umami_website_id();
-});
 
 const scrollToTop = () => {
   if (typeof window !== "undefined") {
@@ -99,32 +93,6 @@ const nextPage = () => {
   }
 };
 
-const fetchArticleListHits = async () => {
-  if (!showHit) {
-    isArticleListHitsFetched.value = true;
-    return;
-  }
-  try {
-    const response = await fetch(
-      `${SiteConfig.umami_url}/api/websites/${SiteConfig.get_umami_website_id()}/blogpage`,
-    );
-    const { views } = await response.json();
-    // console.log("get views", views);
-    views.forEach((item) => {
-      const post = posts.value.find((p) => {
-        const page_url = withBase(p.url);
-        // console.log("item url", p.url, page_url);
-        return page_url == item.url_path;
-      });
-      if (post) {
-        post.hit = item.num;
-      }
-    });
-    isArticleListHitsFetched.value = true;
-  } catch (error) {
-    console.error("Error fetching page hits:", error);
-  }
-};
 
 watch(
   location,
@@ -142,7 +110,7 @@ watch(
 );
 
 onMounted(() => {
-  fetchArticleListHits();
+  // fetchArticleListHits();
 });
 </script>
 
@@ -151,16 +119,25 @@ onMounted(() => {
     <div
       class="w-full text-xl leading-normal text-gray-800 rounded-t md:text-2xl"
     >
-      <ul class="flex flex-wrap pt-6 -mx-3 md:pt-12 sd:mx-1 md:mx-0">
+      <ul class="flex flex-wrap pt-6 mx-3 sd:mx-1 md:mx-0">
         <li
           class="flex flex-col px-4 py-3"
-          v-for="{ url, title, date, cover, categories, hit } of articleList"
+          v-for="{
+            url,
+            title,
+            date,
+            edit_time,
+            cover,
+            categories,
+            hit,
+          } of articleList"
           :key="url"
         >
           <ArticleCard
             :url="url"
             :title="title || ''"
             :date="date"
+            :edit_time="edit_time"
             :cover="cover || ''"
             :categories="categories || []"
             :hit="hit || 0"

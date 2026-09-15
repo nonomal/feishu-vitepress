@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "30 2 */1 * *"
+  # schedule:
+  #   - cron: "30 2 */1 * *"
 name: create release
 permissions:
   contents: write
@@ -17,20 +17,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm # or pnpm / yarn
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Install dependencies
-        run: npm ci # or pnpm install / yarn install / bun install
+        run: npm install # or pnpm install / yarn install / bun install
 
-      - name: Build with VitePress
-        # env:
-        # BASE_URL: "/"
-        run: npm run build:blog
-      - name: zip dist
-        run: zip -r dist.zip blog/docs/.vitepress/dist/*
+      - name: Build and Zip All Types
+        run: |
+          set -e
+          for type in blog  bytefuse; do
+            echo "Building for $type"
+            npm run build:$type --prefix blog
+            echo "Zipping dist for $type"
+            zip -r dist_${type}.zip blog/docs/.vitepress/dist/*
+          done
 
       - name: Create Release
         id: create_release
@@ -42,18 +44,17 @@ jobs:
           release_name: Release_${{ github.run_number}}
           body: |
             Changes in this Release
-            - First Change
-            - Second Change
           draft: false
           prerelease: false
 
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
+      - name: Upload Release Assets
+        run: |
+          set -e
+          for file in ./dist_*.zip; do
+            if [ -f "$file" ]; then
+              echo "Uploading $file..."
+              gh release upload ${{ github.run_number }} "$file" --repo ${{ github.repository }}
+            fi
+          done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-          asset_path: ./dist.zip
-          asset_name: dist.zip
-          asset_content_type: application/zip

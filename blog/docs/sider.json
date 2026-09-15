@@ -1,83 +1,616 @@
 [
   {
-    "text": "首页",
+    "text": "Index",
     "link": "/index"
   },
   {
     "text": "学技术",
     "items": [
       {
+        "text": "vpn",
+        "link": "/ZcN8dH5BKoJhE3xqf4UcXExbn9d"
+      },
+      {
         "text": "vim学习笔记",
-        "link": "/feishu__2023_1_21_skill_vim"
+        "link": "/JW6KdzXvgoUq5Gxl938ciA4LnTb"
       },
       {
         "text": "Nginx",
-        "link": "/feishu__2024_3_25_skill_nginx"
+        "link": "/V3LFd0XzmoQ6cux0vk7cbjKinXB"
       },
       {
         "text": "github相关学习",
-        "link": "/feishu__2024_3_26_skill_github"
-      },
-      {
-        "text": "青龙自动化工具(自动运维）",
-        "link": "/feishu__2024_3_26_skill_qinglong_auto"
-      },
-      {
-        "text": "C#语言学习",
-        "link": "/feishu__2024_4_7_skill_c_sharp"
+        "link": "/M10ydnmzxoTvspxhBgicq2qunUd",
+        "items": [
+          {
+            "text": "github加速",
+            "link": "/KT9MdTU4zo6oRqxPOdwcfOSDn1b"
+          }
+        ],
+        "collapsed": true
       },
       {
         "text": "android_mem",
-        "link": "/feishu__2024_4_17_skill_android_mem"
+        "link": "/OMSkdde66opszexBBmtcoRXKnIf"
       },
       {
         "text": "软件破解",
-        "link": "/feishu__2024_4_19_skill_crack"
-      },
-      {
-        "text": "Electron 开发学习",
-        "link": "/feishu__2024_4_23_skill_electron"
-      },
-      {
-        "text": "Rustdesk使用",
-        "link": "/feishu__2024_4_28_skill_rustdesk"
-      },
-      {
-        "text": "网站的seo加强"
-      },
-      {
-        "text": "学飞源码",
+        "link": "/PtMDdGT04oQ6CUxBKI9c7N2ynFg",
         "items": [
           {
-            "text": "vscode源码学习",
-            "link": "/feishu__2024_4_31_skill_learn_open_souce_vscode"
+            "text": "怎么破解android包",
+            "link": "/M5aLdF2EiomjFIxlZ5NcnA9TnS0"
+          },
+          {
+            "text": "Winshark",
+            "link": "/VoOBdSR23oHnH0xm7srcFdZyn3b"
+          },
+          {
+            "text": "app抓包",
+            "link": "/QmGCdXBxNoFkFlx95q3c1fXfnhc"
+          },
+          {
+            "text": "window程序抓包"
+          },
+          {
+            "text": "web反编译",
+            "link": "/NThMdcLlEouV1hxcLFKcQXvknvh",
+            "items": [
+              {
+                "text": "ast反混淆",
+                "link": "/VaKjdzlhxoS8cZxph2bcDZx1n80"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Idapro",
+            "link": "/So7fdmapDopEfTx2lXGcy7wWnrd"
+          },
+          {
+            "text": "Ai",
+            "link": "/BVSMdsTyEo2SL0xg8D2c9FTwnbh"
+          },
+          {
+            "text": "Mitmproxy",
+            "link": "/A0kydoicxo9vCaxQz2hcVpY2nLh"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
-        "text": "爬虫",
-        "link": "/feishu__2024_5_4_skill_spider"
+        "text": "网站的seo加强",
+        "link": "/WlIDdyogiox0ryxOiP0cxYYFnMg"
       },
       {
-        "text": "vpn",
-        "link": "/feishu__2024_5_5_skill_vpn"
+        "text": "Game",
+        "items": [
+          {
+            "text": "unity 学习笔记",
+            "items": [
+              {
+                "text": "unity 内存分析工具",
+                "link": "/Szt6dnZw5oAq0txNybecLmOSnif"
+              },
+              {
+                "text": "定制unity profiler指标",
+                "link": "/XhZfdWEgso2RUhxpHDPcWTkrnjf"
+              },
+              {
+                "text": "unity 内存定制内存分配",
+                "link": "/LpyldKzekoEsB5xssFpcwzEnn3M"
+              },
+              {
+                "text": "il2cpp学习",
+                "link": "/TBnxdqAXVohsozxJdSRczVMBnYb"
+              },
+              {
+                "text": "Unity渲染相关",
+                "link": "/EdwDdHf6NoKNOKxX9nEcBMA9nHg"
+              },
+              {
+                "text": "Render doc 学习",
+                "link": "/Y6CiduUMKoBmT2xdQbqczL27n6b"
+              },
+              {
+                "text": "catlikecoding教程学习",
+                "link": "/W0PGdWPssoPEVzxTwsUcE4amn7b"
+              },
+              {
+                "text": "Unity_crash"
+              },
+              {
+                "text": "碰撞检测",
+                "link": "/LUTudug19ocbXQxNLpTcsqxdn4g"
+              },
+              {
+                "text": "unity调试",
+                "link": "/MTardhXGkoDZU2xmHPJchE20nt4"
+              },
+              {
+                "text": "ios闪退"
+              },
+              {
+                "text": "一些使用",
+                "link": "/OKAidA48SoEyFFxGFfYcJFBdnBg"
+              },
+              {
+                "text": "寻路"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Airsim",
+            "link": "/IcucdlKUgoNVcmxUCx5cIkrRnaf"
+          }
+        ],
+        "collapsed": true
       },
       {
-        "text": "duckdb学习",
-        "link": "/feishu__2024_5_12_skill_duckdb"
+        "text": "加密与解密",
+        "link": "/ZhNcdL9SIoRvhqxXDqycoH3Jnsc"
+      },
+      {
+        "text": "Node",
+        "items": [
+          {
+            "text": "node写c++组件",
+            "link": "/HGdld6uuwojOjoxoMcscCU3SnVc"
+          },
+          {
+            "text": "node版本管理",
+            "link": "/A4tUdBPVoouaVjx3k9XczWCYnMe"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "flutter学习",
+        "link": "/JyhadG9etogmopxbEXDcOXZ2nve"
+      },
+      {
+        "text": "网络相关",
+        "items": [
+          {
+            "text": "frp",
+            "link": "/EliLdfJD6oIb4uxQ1B5cjs63nuc"
+          },
+          {
+            "text": "Trojan",
+            "link": "/LDC3deCcsoRL5Lx1A85c6WMunyc"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "cloudflare",
+        "link": "/QoHudrgqaoMfKCxHWB1cynufnTh"
+      },
+      {
+        "text": "Docker",
+        "items": [
+          {
+            "text": "自制docker镜像",
+            "link": "/G1sQdjSN3obnLwxZnvxcH7Npnhc"
+          },
+          {
+            "text": "docker存储位置修改",
+            "link": "/UY1TdNX8eoIV29xn3RhcN113nuf"
+          },
+          {
+            "text": "Wsl",
+            "link": "/Jrq5dumxDojrdaxQQ6Ucim31nTc"
+          },
+          {
+            "text": "遇到的问题",
+            "link": "/V7JcdyfI1oYN0ixtBPlcZZ34nkf"
+          },
+          {
+            "text": "一些维护"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Python",
+        "items": [
+          {
+            "text": "Python 的多版本环境",
+            "link": "/TgqBdSAUlovEQexJ55scoCd1nUh"
+          },
+          {
+            "text": "uv",
+            "link": "/MeEUdsVFzoWQ19xf0kVcWH1In1a"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Git",
+        "items": [
+          {
+            "text": "常用操作",
+            "link": "/DHGed7G9Ro1Gfqx3OCScJSFXn3g"
+          },
+          {
+            "text": "问题汇总",
+            "link": "/Ieu5dC47voqQMWx73UWcsqaGn3d"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "linux",
+        "link": "/Tc95dZ1TwoA5gNxCUJfcC3TRngh",
+        "items": [
+          {
+            "text": "ssh连接",
+            "link": "/S1hvdXIrKof4v7xmfVZcN6DBngf"
+          },
+          {
+            "text": "ubuntu",
+            "link": "/S4fPd6rqwo9f0BxRd9Nc1wsMn4d"
+          },
+          {
+            "text": "vmware虚拟机安装",
+            "link": "/W6LMdejKIoJcaMxRKW3cBqgInSd"
+          },
+          {
+            "text": "新电脑安装"
+          },
+          {
+            "text": "常用操作",
+            "link": "/K7hldt8OZoCGfzxjxzrcwf70nGc"
+          },
+          {
+            "text": "nfs_server",
+            "link": "/FEnJdsygvocXKfxbOpPcsczongb"
+          },
+          {
+            "text": "linux访问windows共享",
+            "link": "/Cxwqdf5l4owsfyxUCIccIX4hnch"
+          },
+          {
+            "text": "Nginx",
+            "link": "/SONqd35GAoVMngxtXAecPDKenjh"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "AI",
+        "items": [
+          {
+            "text": "pytorch安装"
+          },
+          {
+            "text": "Ai agent bot",
+            "link": "/OGWod7ULKo0U2Gx3gzJc8vB5nEb",
+            "items": [
+              {
+                "text": "openclaw",
+                "link": "/EfAxdGmsao2VKsxtPUOcELu8ndE"
+              },
+              {
+                "text": "hermes-agent",
+                "link": "/SprHd3Qc2o9B0Qx7Cx6cwsCxnSg"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "杂项",
+            "items": [
+              {
+                "text": "Cuda",
+                "link": "/YzE3doCjZom6MaxtUYgcAOGqnoc"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "Coding",
+            "items": [
+              {
+                "text": "Claude code",
+                "link": "/RalddH1jEolug0xbBDLcLxPrnBb"
+              },
+              {
+                "text": "Codex",
+                "link": "/GMB6dTsuko1z6lxZqfRcklT4nRe",
+                "items": [
+                  {
+                    "text": "codex使用",
+                    "link": "/W3ncdsJibocvPlxcz3KctQnhnje"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "text": "Deepseek",
+                "link": "/HHXxdwpO7oiKNZxMUL9caykNnKe"
+              },
+              {
+                "text": "Grok",
+                "link": "/HvOidg2KyohbnPx2DcocFfZfnRh"
+              },
+              {
+                "text": "Opencode",
+                "link": "/DcoAd5yImow65Ax6lgAcFxKvnAg"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "API 中转站搭建指南",
+            "link": "/S47edGXYToq7zPxIhHYcpEO6nTb",
+            "items": [
+              {
+                "text": "codex",
+                "link": "/VmrCdg8ZVouFGUxF9tGc73ZXnkd"
+              },
+              {
+                "text": "Deepseek",
+                "link": "/IYHTdjqEioZdW0xYjZTczMotnzh"
+              },
+              {
+                "text": "Gemini",
+                "link": "/QvKEdjTvoo9crCxotICcr8TCnHd"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "ai工作流（没用了）",
+            "items": [
+              {
+                "text": "玩玩n8n（agent流行后，工作流要落伍了）",
+                "link": "/LatvdKdX7oZfX5xxgpYcLzqnnVN",
+                "items": [
+                  {
+                    "text": "bugly自动分析工作流使用说明",
+                    "link": "/W92tdYHOKouTa6xXcjvcY1QAnnc",
+                    "items": [
+                      {
+                        "text": "bugly自动分析n8n工作流-设计思路",
+                        "link": "/EofzddXPQoHuZxxXMqEc0ekanfe"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "text": "玩玩n8n,全自动流水线：下载→提音→转文字→带时间戳！",
+                    "link": "/UwLld3UHwomPSMxCgRqchFb7n4g",
+                    "items": [
+                      {
+                        "text": "工作流环境安装",
+                        "link": "/Z0kDdxtLsoChmBxzhA9c7Uv0nbc"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "text": "杂项",
+                    "link": "/SNhpdp2UsobiKhxJN6McauKRnYc",
+                    "items": [
+                      {
+                        "text": "Feishu node",
+                        "link": "/CfVFdbn9eoKIyYxoJiFcoMRwnEb"
+                      },
+                      {
+                        "text": "n8n使用后的一点感想",
+                        "link": "/RnAIdh6oOoZyiFx8Nylc2Rx8nac"
+                      },
+                      {
+                        "text": "公众号"
+                      },
+                      {
+                        "text": "源码运行",
+                        "link": "/GqYUdgV3Jo0kUHx0qqichS5fnzf"
+                      }
+                    ],
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "text": "Coze",
+                "link": "/OdPtdFV03oRswmxh4VtcYtzAn0f"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "图像识别",
+            "link": "/Basad6jz8oyyPEx9oEhcz23unSI",
+            "items": [
+              {
+                "text": "Yolo"
+              },
+              {
+                "text": "图片标注",
+                "link": "/VEZfdg4OIoVujzxicWXcjE1jnfc"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "ai接口",
+            "link": "/TfZEdjs8WoqakvxVl0vcpuv7n4c"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Math",
+        "items": [
+          {
+            "text": "定点计算"
+          },
+          {
+            "text": "四元素"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "c++",
+        "link": "/KywydDopWo7R1Rxc0lichrCIn0Q",
+        "items": [
+          {
+            "text": "Vscode"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "FFmpeg"
+      },
+      {
+        "text": "鸿蒙"
+      },
+      {
+        "text": "Windows",
+        "link": "/Mey0dZGFNoKJJLxS11acomobnAH",
+        "items": [
+          {
+            "text": "Innosetup",
+            "link": "/Q9GPdJ82Jory0wxH7ZRcDL64nMb"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "java"
+      },
+      {
+        "text": "android",
+        "items": [
+          {
+            "text": "用gralde命令行打包",
+            "link": "/XaABdXFTGogoHsxuhy9c92EgnOf"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Cesium",
+        "link": "/RtGxdhOpIoGl45x0VK1cyzohnnf"
+      },
+      {
+        "text": "Maya"
+      },
+      {
+        "text": "https证书",
+        "link": "/UruRd82WJomY78xd9JmcBa4YnAf"
+      },
+      {
+        "text": "Rust",
+        "link": "/TyY7dxaWdoaFawxyZw5cgDedn5e"
+      },
+      {
+        "text": "Lua",
+        "link": "/SzlSdZNaCo73sexcxJ0c0rvPnPf"
+      },
+      {
+        "text": "Photoshop",
+        "link": "/CvQxdJzVsoKATixknsXc16zsnIh"
+      },
+      {
+        "text": "Postgresql",
+        "link": "/LT31dyqgPollU1xC5aGcCaDPnLf"
+      },
+      {
+        "text": "chromium 嵌入式浏览器",
+        "link": "/HCDNdDB7qomwIZxup8gcKECVnvh"
+      },
+      {
+        "text": "搞账号",
+        "link": "/LiNBd8YZ6ogSIoxQR7mcJIRJnRg",
+        "items": [
+          {
+            "text": "giffgaff卡",
+            "link": "/CAv4dfiTso8k44xY3v3cQ7Xpnid"
+          },
+          {
+            "text": "google账号",
+            "link": "/VNBjdq3qZoISzJxwdHecfUyUnbe"
+          },
+          {
+            "text": "stripe"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "基础",
+        "link": "/LzAldncMUoKF1Hxz24pcO7P9nNh"
+      },
+      {
+        "text": "pdf工具",
+        "link": "/JizwdVysaox0Jdx0dBRcyy64n7g"
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
-    "text": "生活"
+    "text": "生活",
+    "items": [
+      {
+        "text": "有用的东西收集",
+        "link": "/S2SpdPpu5o4aWNxysuJcKO8Rnoe"
+      },
+      {
+        "text": "我一生的故事",
+        "link": "/Nn4Pd04zboHBqQxZhi8c50ddnAh"
+      },
+      {
+        "text": "随感",
+        "link": "/UiEqdPkcWojVnux4R9AcEUy9n4e"
+      },
+      {
+        "text": "游戏",
+        "link": "/Ndv7dB3KVoTgiQxVu3BckZhInod"
+      },
+      {
+        "text": "感想",
+        "link": "/Y3AqdJiOKo8tk5xqnfpcjcPun9f"
+      },
+      {
+        "text": "精彩话术",
+        "items": [
+          {
+            "text": "工作而已",
+            "link": "/Vg1id85phocicSxQ324ck3K6n0b"
+          },
+          {
+            "text": "一头驴",
+            "link": "/ZkzKdjStco7LTwxYaOhcKSqInhb"
+          },
+          {
+            "text": "镜中的牛马",
+            "link": "/PyPrdTjZjoFV2JxgstDc4rExnQd"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
   },
   {
     "text": "运动"
   },
   {
-    "text": "理财"
+    "text": "理财",
+    "items": [
+      {
+        "text": "可转债抢配额",
+        "link": "/LQ4ld9u4bo87U6xykwXcLyDqnwn"
+      }
+    ],
+    "collapsed": true
   },
   {
     "text": "项目",
@@ -87,101 +620,721 @@
         "items": [
           {
             "text": "飞书博客-项目简介",
-            "link": "/feishu__2024_3_7_product_myblog_intro"
+            "link": "/QDBJdRMk3o7MEZx0GFXcs0qGnCe"
           },
           {
             "text": "飞书博客-项目日志",
-            "link": "/feishu__2024_2_26_product_myblog_project_record"
+            "link": "/FeKfdsltMoVyKZxESmRc53aRnod"
           },
           {
             "text": "飞书博客-演示",
-            "link": "/feishu__2024_3_16_product_myblog_demo"
+            "link": "/AEMudWOdroXrUPxZ6SxcYaQpnVd"
           },
           {
             "text": "飞书博客-博客配置说明",
-            "link": "/feishu__2024_3_16_product_myblog_blog_set"
+            "link": "/Mnd5dKwt9o683mxepRacc78fnPh"
           },
           {
             "text": "飞书博客-github action自动化流程说明",
-            "link": "/feishu__2024_3_16_product_myblog_github action intro"
+            "link": "/CYc8dt2gho5bQZxRLtEcNbxEn7b"
           },
           {
             "text": "飞书博客-第三方工具的配置",
-            "link": "/feishu__2024_3_25_product_myblog_third_lib"
+            "link": "/SNjddz0D2oaq4gxWBZ4chFy4nDg"
           },
           {
             "text": "博客自动同步到阿里云",
-            "link": "/feishu__2024_4_6_product_myblog_aliyun_auto"
+            "link": "/FouFdLA44o3Npqxq4ueclrGQnRe"
+          },
+          {
+            "text": "feishu_blog修改记录",
+            "link": "/QQ85dDi33o6I0vxMzXscAQ3Snfb"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
-        "text": "融号宝",
+        "text": "LockPass密码管理器",
         "items": [
           {
-            "text": "融小宝-项目简介",
-            "link": "/feishu__2024_4_28_product_bytefuse_intro"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "密码通",
-        "items": [
-          {
-            "text": "密码通",
-            "link": "/feishu__2024_4_29_product_onepassword_intro"
+            "text": "LockPass",
+            "link": "/G4w5deRusoLzzQxUopGcQcNenoe"
           },
           {
             "text": "密码管理器",
-            "link": "/feishu__2024_5_21_product_onepassword_develop_log"
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "text": "bugly分析工具",
-        "items": [
-          {
-            "text": "bugly分析工具说明",
-            "link": "/feishu__2024_4_31_product_bugly_tool_intro"
+            "link": "/MrNvd2mTpoIJiUxN3xXccMlgn7e"
           },
           {
-            "text": "bugly分析工具-开发记录",
-            "link": "/feishu__2024_5_3_product_bugly_tool_develop_log"
+            "text": "给自己做一个1password：序言（一）",
+            "link": "/RaTxdReWnoRe3nxDrtnccdSznNb"
+          },
+          {
+            "text": "给自己做一个1password：安全设计方案（二）",
+            "link": "/Nj9EdQOCNoFl6jxsjSMcpEGinpF"
+          },
+          {
+            "text": "密码管理器github说明",
+            "link": "/EA35deMveohjSIx65Qdc11efnub"
+          },
+          {
+            "text": "给自己做一个1password：自已的密码管理器demo已经完成，简单介绍一下（三）",
+            "link": "/Gs14d2mgYoJ7rWxCExFcrplAnth"
+          },
+          {
+            "text": "给自己做一个1password：安装及系统的初始化(四）",
+            "link": "/UdRVdoFLZoNllHxUoWicEyXlngb"
+          },
+          {
+            "text": "给自己做一个1password：密码库的增删改查(五）",
+            "link": "/TWrXdJsghoD1QLxJaMrc4Z7rnCf"
+          },
+          {
+            "text": "给自己做一个1password：密码的增删改查(六）",
+            "link": "/W6CVddh92oYJ2UxrLemcYTWinsh"
+          },
+          {
+            "text": "给自己做一个1password：密码的自动输入和快速搜索(七）",
+            "link": "/LFWAdUUqEoY8UNxIM1IcMzitnqb"
+          },
+          {
+            "text": "给自己做一个1password：软件设置相关（八）",
+            "link": "/MMgkdJq9boLufrx0cH5c0fj3nCd"
+          },
+          {
+            "text": "给自己做一个1password：其它快捷功能(九）",
+            "link": "/HN4zdYOqjo9LWaxunNZcDRSpnMf"
+          },
+          {
+            "text": "LOCKPASS密码管理器修改记录",
+            "link": "/Tg5ndwlX0oljdJxfl0ccu9alnNb"
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
-        "text": "游戏性能检测工具",
+        "text": "licenseHub注册码发卡验证平台",
+        "link": "/Az6dd7PeSomasjxtphxchUqxnOg",
         "items": [
           {
-            "text": "游戏性能检测工具（说明）"
+            "text": "licenseHub优化记录",
+            "link": "/FkmwdHPtkoE6XVxzAMBcvaSEntg"
           }
         ],
-        "collapsed": false
+        "collapsed": true
+      },
+      {
+        "text": "网站克隆器",
+        "items": [
+          {
+            "text": "wincloner-使用说明",
+            "link": "/FM3jd7FHboLc0Px4swpcp9Tcn9f"
+          },
+          {
+            "text": "webcloner-新浪微博采集使用说明",
+            "link": "/YYAUdyUb9ozPZXx0xnKcAxyBnxc",
+            "items": [
+              {
+                "text": "webcloner-告别截图！WebCloner全新微博备份方案，长微博、高清图一个都不少",
+                "link": "/Y47ddCotxoBaVzxM0qcc1yFSnth"
+              },
+              {
+                "text": "webcloner-微博备份功能优化",
+                "link": "/DoBVdqAB3oLc0VxMMkqcuJjRnqb"
+              },
+              {
+                "text": "webcloner功能演示-备份我的新浪微博",
+                "link": "/GvhndANHNoyKoMxTR0fcxRYUngh"
+              },
+              {
+                "text": "微博备份工具使用教程：备份微博、评论、转发和视频到本地",
+                "link": "/E7jedDltVohG5WxhDcmcFYi2nPe"
+              },
+              {
+                "text": "微博备份功能更新说明（2026-06-09）",
+                "link": "/FbTZdPV3WoheJaxaQPkcHXyVnRc"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "webcloner功能演示-新浪博客备份",
+            "link": "/Jgmydq1HpoXtvfxFqrKclioTnnf"
+          },
+          {
+            "text": "webcloner功能演示-搞定qq空间",
+            "link": "/T2aVdfE7vo8ZySxfCOWcaawlnpf"
+          },
+          {
+            "text": "webcloner功能演示-备份qq说说",
+            "link": "/Z870dDZDAoaH6uxz70OctQYdnOf"
+          },
+          {
+            "text": "WebCloner一键备份小红书账号",
+            "link": "/E4rWdtAHEolwTvxKWxvcINVznmh"
+          },
+          {
+            "text": "WebCloner一键备份抖音",
+            "link": "/Ku39dxSaVoO2O0xMMzTczDLNnOf"
+          },
+          {
+            "text": "webcloner-雪球",
+            "link": "/T4pIdmAx1oUdwMx6zQEcaVBmnCe"
+          },
+          {
+            "text": "webcloner-功能优化记录",
+            "link": "/Zojxd7sMWowoPixZ9pacWMHznp1"
+          },
+          {
+            "text": "开发过程",
+            "link": "/YBfkdtXjVoBn4OxDWSFcE4Sonhg",
+            "items": [
+              {
+                "text": "WebCloner再升级，且慢+微博评论全收录！",
+                "link": "/Jdacd3abVowHHqxqYNEc8ZJSnNg"
+              },
+              {
+                "text": "webcloner-完结",
+                "link": "/DnhUdieSFojXrPxLDfccrvYhnyf"
+              },
+              {
+                "text": "webcloner-回看自己的qq空间有感",
+                "link": "/UeiHdipdAoP4W9xmBkqcnESxn8c"
+              },
+              {
+                "text": "webcloner如何保存自己的cookies",
+                "link": "/TBsUd6eUnosyKRxuIYnc3Cw0nrh"
+              },
+              {
+                "text": "Webcloner-开发遇到的问题",
+                "link": "/Sef4d1xt1oz8soxBZYbcf6lkngh"
+              },
+              {
+                "text": "webcloner网站克隆器介绍",
+                "link": "/M2XYdbunIouhGsxxNOkcfdiGnvh"
+              },
+              {
+                "text": "雪球记录",
+                "link": "/TJZMdcglOo0WTyxuk7mc9ZUznOh"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "推广"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "一个小程序-放学状态管理平台",
+        "link": "/SzWRdJS4XoXEJnxTJ9wcZWcpnrc",
+        "items": [
+          {
+            "text": "状态管理平台优化记录",
+            "link": "/V41udjRCoojUSdxCnulcwbNBncI"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "醒了，就要到(任务闹钟）",
+        "link": "/LCjZdFvsaoerE8xWH72cepLInXd"
+      },
+      {
+        "text": "LockPass",
+        "link": "/SOFHd9up1oMHyLxc1i6cxFtInxf",
+        "items": [
+          {
+            "text": "LockPass 安全机制与流程",
+            "link": "/OBfCdknVLoW9MWxs1wXchPNGnbd"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "其它",
+        "link": "/WvyFdsmCCofwfBxsKnycdIgbnob",
+        "items": [
+          {
+            "text": "其它有用的库",
+            "link": "/LpaadPxipozzNqxGDk8cybjEnub"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "ai训练平台",
+        "link": "/XFKxdvdFMoHMDWx3nAwcWucUnlh",
+        "items": [
+          {
+            "text": "Cube Studio",
+            "link": "/O4Bgd8EnmoJmjVxFubvct0yunAf"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "WeiboVault：把微博完整备份到本地的工具",
+        "link": "/OOTgdLf7no3R7cxH7Cmck158nxf",
+        "items": [
+          {
+            "text": "文章",
+            "link": "/XMs2dX4mKopawSxpGDZcuLmunqc",
+            "items": [
+              {
+                "text": "微博内容怕丢或被封如何备份？把你的微博完整备份到本地：WeiboVault 使用指南",
+                "link": "/KOH2dajQbosVHoxaic9cNygDnZg"
+              },
+              {
+                "text": "市面上微博备份软件对比",
+                "link": "/Q4fVdlRono2rzmxb5pRc9VHSn4c"
+              },
+              {
+                "text": "微博内容怎么备份到本地？5 种方法完整对比",
+                "link": "/TDzxdB2jRoqnQ1xHPgEcRah1nBf"
+              },
+              {
+                "text": "本地归档说明：如何查看、修改和导入微博归档",
+                "link": "/CzKldGc8Wop4WqxugA1cjj9Dnpg"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "优化记录",
+            "link": "/ZqoddivQpohIxcxGEFrcnJSDnye"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "aimeter(ai使用量统计工具）",
+        "link": "/MG1qdKi8bony9bxDQHlcopL5nqg"
+      },
+      {
+        "text": "Wemory 微忆",
+        "link": "/DWssdcdCDoSGSKxuWWjcj30Pn00",
+        "items": [
+          {
+            "text": "调研"
+          },
+          {
+            "text": "优化记录",
+            "link": "/PJY8dnXshopOA8xkW1Ucb2qJnAe"
+          },
+          {
+            "text": "文章",
+            "link": "/A9PQdcPdhoLaIxxJE8Wc2SZungb",
+            "items": [
+              {
+                "text": "Wemory：微信记录，由你作主",
+                "link": "/MDeVdLevuog2MIx415FcRitBnfc"
+              },
+              {
+                "text": "微信聊天记录怎么导出：五种方法对比，推荐本地工具 Wemory 微忆",
+                "link": "/AnpBdVgyjog4QOxTCZTcKeCKnZf"
+              },
+              {
+                "text": "小众精美且无敌！微信聊天记录导出神器",
+                "link": "/R9Srdj6ocoaWDmxlbfQcVnEsnkd"
+              },
+              {
+                "text": "聊天记录导出设置指南：显示内容、隐私和消息范围",
+                "link": "/ZmIZdZW80ozpD6xypYRcPL4Qnxg"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "Ai drama",
+        "link": "/WlSXdhghGo829kxw7HhcTkCNnFc"
+      },
+      {
+        "text": "运营",
+        "link": "/WyKYdOmUwoYJGlx9QUMcaotBn3f",
+        "items": [
+          {
+            "text": "种红 Seedred：对标 SuperX 做小红书创作者增长产品的可行性、收益与方案",
+            "link": "/XeXJdLUJ4oOjwnxULmicxCwnnAg",
+            "items": [
+              {
+                "text": "种红 Seedred 技术实现方案",
+                "link": "/YrlqdEuuzoYITrxXPGGc5zHyn9e"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "对标 Lovekey 做 AI 聊天回复键盘的可行性、收益与方案",
+            "link": "/KHEpdIyFwoqfuuxDlCWcuXhonZg",
+            "items": [
+              {
+                "text": "火候键盘：功能点与技术实现方案",
+                "link": "/SkBXdSKE5ogFRixVpqicZfAnnTd"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
       }
     ],
-    "collapsed": false
+    "collapsed": true
   },
   {
     "text": "其它平台",
     "items": [
       {
-        "text": "怎么让ai辅助你写文章",
-        "link": "/feishu__2024_5_12_other_platform_2024-6-12"
+        "text": "2024",
+        "items": [
+          {
+            "text": "2024-6-27 为什么夏承曦想退学这么难",
+            "link": "/MHZ0dZTdjorB48xvbLhc50SDnQg"
+          },
+          {
+            "text": "2024-7-2 从姜萍事件我看到的人性丑陋",
+            "link": "/GKrpdbFIPoT6P2xPvy1ci2rMnec"
+          },
+          {
+            "text": "2024-7-6 打破互联网巨头的数字殖民",
+            "link": "/KJtsdJeKcoKnytxsdHpcpWujn0c"
+          },
+          {
+            "text": "上个破班，别把自己搭进去",
+            "link": "/YQu8dJVbDob2wwxnDl1coi6gnSc"
+          },
+          {
+            "text": "3分钟开通openai plus账号教程（2024年亲测有效）",
+            "link": "/F5ASd439VoIH5ExwCZ8clnBZnKB"
+          },
+          {
+            "text": "选择比努力重要",
+            "link": "/Q6tydXKF9oo4XqxVYEkcEvb2nVe"
+          },
+          {
+            "text": "中国奥运代表团的精心准备：带空调出征巴黎",
+            "link": "/Kj6MdOFCuoBRKexjUEdcFWdmn9o"
+          },
+          {
+            "text": "用飞书写个人博客",
+            "link": "/TFdndRm07ocx0AxYyErcJN55nSg"
+          },
+          {
+            "text": "董宇辉：从打工者到老板的华丽转身",
+            "link": "/EIOwdXeEkoCJCNxlCSacnlrAnRb"
+          },
+          {
+            "text": "俞敏洪：将上市公司核心拱手相让，还自吹自擂，够奇葩",
+            "link": "/KlQFdrz1XoMLI9xH74ScoZ6xnKe"
+          },
+          {
+            "text": "乐怡，希望你能有不一样的人生",
+            "link": "/IHqOdw9f2oTmLWxfVX4c2lytnPg"
+          },
+          {
+            "text": "2024-10-19 优化了一下飞书转博客的系统",
+            "link": "/VBz6dDEmDoNNsbxxAWSccKC0n6d"
+          },
+          {
+            "text": "2024-10-21 免费好用的文章封面制作神器（试用）",
+            "link": "/L6xQdCYyeowUQOxFyO4cUonPnCg"
+          },
+          {
+            "text": "2024-11-8 聊聊我记忆中的一个女神",
+            "link": "/GXfKd09dWoFQt0x36rdcuDTRnzh"
+          },
+          {
+            "text": "2024-11-11 免费开源的服务器远程连接工具electerm试用",
+            "link": "/OwOEdNg7Oo5kAwxyeG9cXvUUnNd"
+          },
+          {
+            "text": "2024-11-14 Docker虚拟机",
+            "link": "/HG3idoUJWot4nmxSEBTcna58nFb"
+          }
+        ],
+        "collapsed": true
       },
       {
-        "text": "为什么夏承曦想退学这么难",
-        "link": "/feishu__2024_5_27_other_platform_2024-6-27"
+        "text": "2025",
+        "items": [
+          {
+            "text": "1到6月",
+            "items": [
+              {
+                "text": "2025-2-6 新年第一天",
+                "link": "/YPLJd0KnXobLkPxVpHNcuJO9nMf"
+              },
+              {
+                "text": "2025-2-13 终于把欠的代码账还清了，可以干自己的事情了",
+                "link": "/NTJ6dtQjyo6cZyxbRiic1gEyntc"
+              },
+              {
+                "text": "2025-2-20 你还在为找音乐发愁？LXMusic 了解一下？",
+                "link": "/XV1YdTP6RoRF8yx1sUwcKMzhnrd"
+              },
+              {
+                "text": "2025-2-22 又想诱惑我入场？港股这波涨势能当真吗",
+                "link": "/RuvYd7JLboqwdrx6tvxcXsjbnUv"
+              },
+              {
+                "text": "2025-2-23 马斯克的 Grok3 免费畅玩，150 美金羊毛速薅！但 API 却...",
+                "link": "/NEUYdLVosogBDyxkth4c1qO6nog"
+              },
+              {
+                "text": "2025-2-24 告别人工智障！ESP32+大模型，DIY你的专属AI语音助手！",
+                "link": "/UmErd2lgLoMd1zxUi87cKQmNn8c"
+              },
+              {
+                "text": "2025-2-25 硬核！程序员破解Windows游戏封印，Linux也能畅玩3A大作！",
+                "link": "/CryMduc7YoIg6sx7hkvch19Inrb"
+              },
+              {
+                "text": "2025-2-26 MoneyPrinterTurbo项目",
+                "link": "/OIcjdsNoso2Ntjx08Wrc9p7WnXc"
+              },
+              {
+                "text": "2025-2-27 250美元特朗普钞票？美议员这波操作，我直接迷惑！",
+                "link": "/CZcMdeS63ovP8fxdv9lcTvLHnEg"
+              },
+              {
+                "text": "2025-3-1 美国政坛“奇葩”再现！特朗普泽连斯基互呛，我感觉：中国机会来了",
+                "link": "/M56kdJzKQoIP6dxzRslcntLvnGg"
+              },
+              {
+                "text": "2025-3-14 马桶"
+              },
+              {
+                "text": "2025-3-15 晚餐时间的大V"
+              },
+              {
+                "text": "2025-4-10 工作"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "7到12",
+            "items": [
+              {
+                "text": "2025-7-8 mysql原来是垃圾",
+                "link": "/KgMbdxANVoosscxRg4NcILMhnNb"
+              },
+              {
+                "text": "2024-7-8 搞清楚了我被反诈中心盯上的原因了",
+                "link": "/CQwBdeUiEoWMT2xZDgwcaQemnWK"
+              },
+              {
+                "text": "2025-7-11 opencut/MoneyPrinterV2/快手/https",
+                "link": "/Cdf5dca4xoOkK9xkPBlcwH9jnzd"
+              },
+              {
+                "text": "2025-7-14",
+                "link": "/Uu0DdyOS3oSYgfx6V6xcePlknue"
+              },
+              {
+                "text": "2025-7-17 https代理",
+                "link": "/B4y2dnwRcoQB2kxwqxacCdvcn1d"
+              },
+              {
+                "text": "2025-7-18 cursor不能用了！！！！",
+                "link": "/A9yQd6LneoXSGIx0Ox7ccVX6nMU"
+              },
+              {
+                "text": "2025-9-12 开发webcloner的前因后果",
+                "link": "/BWpQdBLXOosQiyxIZ3pcxoFvnsh"
+              },
+              {
+                "text": "2025-9-17 运维福音！宝塔和 1Panel 让你告别 Linux 命令行的痛苦！",
+                "link": "/AKAFdAjVloEdY7xlXaCc3NkunKf"
+              },
+              {
+                "text": "2025-9-19 给webcloner做了一个宣传页",
+                "link": "/STMzd6JELoK4QcxzH6FcfZAenZc"
+              },
+              {
+                "text": "2025-9-24 近视",
+                "link": "/VBCLdQKu8o62agx2xLscDycMnLc"
+              },
+              {
+                "text": "2025-10-13 打工没前途，我们只是工具人",
+                "link": "/TStHdnMO0oA8MRxL3OicxAVnnwe"
+              },
+              {
+                "text": "2025-10-31 感觉自己在裸奔",
+                "link": "/Fc22deD6dobpeIxNuhccI1sgnPe"
+              },
+              {
+                "text": "2025-11-11 瞎扯蛋",
+                "link": "/Gda3dPZAUoXptHx9KW9cUBSbnNb"
+              },
+              {
+                "text": "2025-11-12 AI炒股：不设技术指标，只给原始数据，让大模型“凭直觉”交易？",
+                "link": "/ATjJd1756o1wZyxQyk0cP3ulnib"
+              },
+              {
+                "text": "2025-11-27 幼儿园",
+                "link": "/NhPWdr9Swo9bsHxSnJrc38hbn8W"
+              },
+              {
+                "text": "2025-12-8 全家中流感",
+                "link": "/OX7Qdh3rsouiyAxvLfocNSYDn5d"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
       },
       {
-        "text": "从姜萍事件我看到的人性丑陋",
-        "link": "/feishu__2024_6_2_other_platform_2024-7-2"
+        "text": "2026",
+        "items": [
+          {
+            "text": "2026-3-20 今天是生日"
+          },
+          {
+            "text": "2026-4-3 头发秃了"
+          },
+          {
+            "text": "2026-5-6 市场热点复盘",
+            "link": "/QMcodfYUzowUYlx8Gx9cC8aCnfg"
+          },
+          {
+            "text": "AI开始抢软件公司的饭碗了",
+            "link": "/CO5kddITnocA1bxVLjGcRKrRnfc"
+          },
+          {
+            "text": "2026-5-31 程序员以后的定位",
+            "link": "/OSbbdtpyLo62e0xtQXIcKu8nnZc"
+          },
+          {
+            "text": "2026-6-1 AI 本该让人少加班，怎么变成了刷 Token 比赛？",
+            "link": "/Yv0vddUkeo2mq6xlpxYcKvPSnie"
+          },
+          {
+            "text": "2026-6-2 半个月一版，全员通宵：一个奇葩项目的开发节奏",
+            "link": "/UdU1dS9ICoBcSdxW0GQc7bGVnve"
+          },
+          {
+            "text": "2016-6-3 跑去香港买中丐股，我到底图什么？",
+            "link": "/Gb7ddwezCoazUlxfGa5cykdgnac"
+          },
+          {
+            "text": "2016-6-4 我用 Codex 一小时接入了微信支付",
+            "link": "/RvCtdIVowouEJXx1lCnc32BWnIh"
+          },
+          {
+            "text": "2016-6-5 记录自己如何用最少的钱用codex",
+            "link": "/EMlIdVy0voXjTUxO0pTcMGkhnEc"
+          },
+          {
+            "text": "2026-6-8 强制 996 之后，大家都在表演加班",
+            "link": "/K4PedGpVuoAU9exTnJZcHpZrnCd"
+          },
+          {
+            "text": "2026-6-9 目前ai做游戏还不是很行",
+            "link": "/ZN0CdNnFuozvrgxVBdcckW3Jnec"
+          },
+          {
+            "text": "2026-6-19 免费软件最贵的地方，是到处都是套路",
+            "link": "/OiaNdDdyHodOJ9xQRSrctRUOnqh"
+          },
+          {
+            "text": "2026-6-21 一次汽车保养维权：我拿到 500 元，也学到了一点谈判技巧",
+            "link": "/W10Dd4hq4o0OcAxNCDAc5OQVnVl"
+          },
+          {
+            "text": "2026-6-25 我们这么努力，为什么总是在模仿？",
+            "link": "/Um1tdlHIOoaeDvxhLJYcFaS0nBg"
+          },
+          {
+            "text": "2026-6-30 上半年没赚钱：市场不给过去发奖",
+            "link": "/JiKTdMLnson2LTxHNCXcYY8enTM"
+          },
+          {
+            "text": "2026-7-5 AI 让个人软件时代到来了",
+            "link": "/Egx6dzwHxoxZtwx1jWPcBd0enCK"
+          },
+          {
+            "text": "2026-7-6 今年真是反常识",
+            "link": "/P0HpdZeCkoGKexxcYfKcRe4Snyg"
+          },
+          {
+            "text": "2026-7-12《功夫女足》：热闹得不像一部电影",
+            "link": "/XFIKdipGnoCw08x4uyTcb7LZnig"
+          },
+          {
+            "text": "第一次上架googleplay",
+            "link": "/Kdjbd00QyoXDFAxfMSRcWQbdn0c"
+          },
+          {
+            "text": "为了给 Windows 软件签名，尝试上架 Microsoft Store",
+            "link": "/J91PdwpodohGDbxZDmbcZ9ILnAd"
+          },
+          {
+            "text": "GPT 5.6 没有惊喜，只让我觉得更封闭了",
+            "link": "/Tw6gdreUgo9sdxxU1wychU0Cnxd"
+          },
+          {
+            "text": "中转站最低的倍率应该不会低于0.2",
+            "link": "/IM8LdB7kJoR2QRxLX07ckHJgn2c"
+          },
+          {
+            "text": "闲鱼为什么能让卖假违规的商家如此有底气？",
+            "link": "/DyAKd6QlDoeNJHx77Ilcr5kwnEg"
+          },
+          {
+            "text": "闲鱼真是个好平台，尤其适合卖家",
+            "link": "/X0Qad1uZLomb91xZ1b0c0KHunWf"
+          },
+          {
+            "text": "我用 AI 重写了一个密码管理器",
+            "link": "/OfhJddLMxoVkWhxP1YNcBhz7nxd"
+          },
+          {
+            "text": "openai学坏了",
+            "link": "/FIuwdyPRjooPcrxUx84cOItjnTb"
+          },
+          {
+            "text": "A股聪明人太多了",
+            "link": "/KZFgdnYqFoy2fQx7XvqcuQ44nud"
+          }
+        ],
+        "collapsed": true
       }
     ],
-    "collapsed": false
+    "collapsed": true
+  },
+  {
+    "text": "乐怡日志",
+    "items": [
+      {
+        "text": "家长会"
+      }
+    ],
+    "collapsed": true
+  },
+  {
+    "text": "废弃",
+    "items": [
+      {
+        "text": "livedown使用说明（没用了）",
+        "link": "/JyErdwyx8oY7jDx2buactkoXnAb"
+      },
+      {
+        "text": "Mycoverview重写（没用了）",
+        "link": "/I5e9dS6ikoffabx5ImAc02Xxnng",
+        "items": [
+          {
+            "text": "2024-10-23 零成本部署一个工具网站",
+            "link": "/IlVHdCVsgobHBlxs2vacm0eKnjd"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
   }
 ]

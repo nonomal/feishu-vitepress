@@ -9,14 +9,15 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "build:github": "cross-env BASE_URL=/feishu-vitepress/ HOST_NAME=https://ftyszyx.github.io/feishu-vitepress/ vitepress build docs",
-    "build:blog": "cross-env BASE_URL=/ HOST_NAME=https://blog.bytefuse.cn/ vitepress build docs",
+    "build:github": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/feishu-vitepress/ HOST_NAME=https://ftyszyx.github.io/feishu-vitepress/ BLOG_TITLE=超级小朋友 ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:blog": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://blog.bytefuse.cn/ BLOG_TITLE=超级小朋友blog ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:bytefuse": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://www.bytefuse.cn/ BLOG_TITLE=星辰起点bytefuse ICP_CODE=粤ICP备2024236057号 vitepress build docs",
+    "build:lockpass": "rm -rf docs/.vitepress/dist && cross-env BASE_URL=/ HOST_NAME=https://www.lockpass.cn/ BLOG_TITLE=星辰起点lockpass ICP_CODE=粤ICP备2024236057号 vitepress build docs",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
     "@types/markdown-it": "^12.2.3",
     "@types/node": "^18.19.4",
-    "autoprefixer": "^10.4.19",
     "cross-env": "^7.0.3",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
@@ -26,12 +27,12 @@
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "sass": "^1.75.0",
-    "tailwindcss": "^3.4.3",
-    "vitepress": "^1.0.1",
-    "vue": "^3.4.5"
+    "tailwindcss": "3.4.3",
+    "vitepress": "1.0.1",
+    "vue": "^3.4.21"
   },
   "dependencies": {
-    "artalk": "^2.7.3",
+    "@giscus/vue": "^3.0.0",
     "medium-zoom": "^1.1.0"
   }
 }

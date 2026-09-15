@@ -8,6 +8,7 @@ import ArticleMeta from "./ArticleMeta.vue";
 import ArticleList from "./ArticleList.vue";
 import ArticleComment from "./ArticleComment.vue";
 import ArticleCopyright from "./ArticleCopyright.vue";
+import BusuanziStats from "./BusuanziStats.vue";
 const { Layout } = DefaultTheme;
 
 const router = useRouter();
@@ -58,6 +59,7 @@ onUnmounted(() => {});
     <template #doc-footer-before>
       <ClientOnly>
         <ArticleCopyright />
+        <BusuanziStats />
       </ClientOnly>
     </template>
     <!-- 文章尾部 -->
@@ -75,6 +77,11 @@ onUnmounted(() => {});
     <template #home-hero-after>
       <!-- 首页文章列表模块 -->
       <ArticleList />
+      <ClientOnly>
+        <div class="flex justify-center">
+          <BusuanziStats />
+        </div>
+      </ClientOnly>
     </template>
   </Layout>
 </template>

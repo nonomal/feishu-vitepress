@@ -1,7 +1,14 @@
+export type PostLang = "zh" | "en";
 export interface Post {
+  lanuage: PostLang;
   title: string;
   url: string;
   date: {
+    time: number;
+    string: string;
+    formatShowDate: string;
+  };
+  edit_time: {
     time: number;
     string: string;
     formatShowDate: string;

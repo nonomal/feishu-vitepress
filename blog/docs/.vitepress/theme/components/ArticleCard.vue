@@ -1,12 +1,14 @@
 <script setup lang="ts">
-import { withBase } from "vitepress";
+import { useData, withBase } from "vitepress";
 import { ref, onMounted, computed } from "vue";
 import { getFormatNumber } from "../utils";
+import { Post } from "../type_def";
 const props = defineProps<{
   url: string;
   title: string;
   cover: string;
-  date: Object;
+  date: Post["date"];
+  edit_time: Post["edit_time"];
   categories: string[];
   hit: number;
   isArticleListHitsFetched: boolean;
@@ -32,11 +34,6 @@ const articleUrl = computed(() => {
   return withBase(props.url);
 });
 const previewImageUrl = computed(() => {
-  // if (!props.cover) {
-  //   console.error("Cover image URL is not provided!");
-  //   return "";
-  // }
-  // console.log("cover", props.cover);
   if (props.cover) return withBase(props.cover);
   return "";
 });
@@ -48,7 +45,7 @@ onMounted(() => {});
   <div
     class="flex-1 h-64 overflow-hidden duration-300 ease-in-out bg-white rounded-t shadow-lg dark:bg-zinc-800 hover:shadow-2xl"
   >
-    <div class="flex flex-col no-underline hover:no-underline">
+    <div class="flex flex-col no-underline hover:no-underline align-middle">
       <a
         :href="articleUrl"
         class="relative overflow-hidden w-[376px] h-[160px] bg-zinc-100 dark:bg-neutral-900"
@@ -63,6 +60,7 @@ onMounted(() => {});
           @error="onImageError"
           :class="[
             'absolute',
+            'object-cover',
             'duration-300',
             'ease-in',
             'w-full',
@@ -72,7 +70,7 @@ onMounted(() => {});
           ]"
         />
       </a>
-      <div class="w-full px-6 mt-5">
+      <div class="w-[376px] px-6 mt-5">
         <a
           :href="articleUrl"
           class="h-auto text-base antialiased font-medium text-gray-800 break-normal md:h-12 sd:text-lg md:text-base dark:text-slate-300 line-clamp-2 font-fira"
@@ -107,7 +105,7 @@ onMounted(() => {});
           <line x1="4" y1="11" x2="20" y2="11" />
           <rect x="8" y="15" width="2" height="2" />
         </svg>
-        {{ date.formatShowDate }}
+        {{ edit_time.formatShowDate }}
       </p>
 
       <div class="flex items-center justify-items-end">

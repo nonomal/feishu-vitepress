@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { MarkdownRenderer } from "./feishu_docx";
+import { DocInfo, MarkdownRenderer } from "./feishu_docx";
 import fs from "fs";
 import mime from "mime-types";
 import yaml from "js-yaml";
@@ -122,7 +122,7 @@ export class FeishuDocHelp {
         })
         .catch((err) => {
           const { message } = err;
-          console.error(" -> catch ERROR: Failed to download image:", fileToken, message, err);
+          console.error(" -> catch ERROR: Failed to download image:", fileToken, message);
           // If status is 403
           // https://open.feishu.cn/document/server-docs/docs/drive-v1/faq#6e38a6de
           if (message.includes("403")) {
@@ -172,23 +172,29 @@ export class FeishuDocHelp {
         item.children = [];
         item.wiki_path_arr = parent_path_arr;
         let create_time = new Date(parseInt(item.node_create_time) * 1000);
+        const docid = item.obj_token;
         let time_str = `${create_time.getFullYear()}_${create_time.getMonth()}_${create_time.getDate()}`;
-        let filename = `${FeiShuDoc_pre}_${time_str}_${parent_path_arr.join("_")}_${item.title}`.toLowerCase();
+        let filename = `${docid}`;
         if (parent_path_arr.length == 0 && item.title.toLowerCase() == "index") filename = "index";
-        const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
-        const sider_item: SideBarItem = { text: title || item.title };
-        if (hide !== true || filename == "index") {
-          console.info("Writing doc", item.title);
-          sider_item.link = `/${filename}`;
-        }
-        if (hide == true && hide_child == true) continue;
-        // console.log("add item", hide, hide_child);
-        sider_items.push(sider_item);
-        if (item.has_child && hide_child !== true) {
-          const new_parents = item.wiki_path_arr.concat(item.title);
-          sider_item.items = [];
-          sider_item.collapsed = false;
-          await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
+        try {
+          const { hide, hide_child, title } = await this.fetchDocBody(path.join(option.doc_root_path, `${filename}.md`), pic_path, item, parent_path_arr.length >= 1 ? parent_path_arr[0] : "");
+          const sider_item: SideBarItem = { text: title || item.title };
+          if (hide !== true || filename == "index") {
+            console.info("Writing doc", item.title);
+            sider_item.link = `/${filename}`;
+          }
+          if (hide == true && hide_child == true) continue;
+          // console.log("add item", hide, hide_child);
+          sider_items.push(sider_item);
+          if (item.has_child && hide_child !== true) {
+            const new_parents = item.wiki_path_arr.concat(item.title);
+            sider_item.items = [];
+            sider_item.collapsed = true;//default collapse the menu
+            await this._fetchAllDocs(new_parents, sider_item.items, item.children, spaceId, item.node_token, option);
+          }
+        } catch (err) {
+          console.error("fetch doc body error", err, "file:", path.join(option.doc_root_path, `${filename}.md`, "title:", item.title, "item", JSON.stringify(item)));
+          continue;
         }
       }
     }
@@ -207,6 +213,12 @@ export class FeishuDocHelp {
     });
     return blocks as any;
   }
+
+  private async feitchDocInfo(document_id: string): Promise<DocInfo> {
+    const res: { document: DocInfo } = await this.fetch("GET", `/open-apis/docx/v1/documents/${document_id}`, {});
+    return res.document;
+  }
+
   private genMetaText(meta) {
     let meta_yaml = yaml.dump(meta, {
       skipInvalid: true,
@@ -217,8 +229,22 @@ export class FeishuDocHelp {
     return output;
   }
 
+  async DownFile(file_token: string, pic_path: string, filepath: string) {
+    const file_res = await this.downloadFile(file_token, pic_path);
+    if (file_res == null) {
+      console.error("download file error", file_token, filepath);
+    }
+    let extension = mime.extension(file_res.headers["content-type"]);
+    let pic_full_path = path.join(pic_path, `${file_token}.${extension}`);
+    const base_url = "/";
+    let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
+    assetURL = assetURL.replace("\\", "/");
+    return assetURL;
+  }
+
   private async fetchDocBody(filepath: string, pic_path: string, fileDoc: WikiNode, category: string) {
     let document_id = fileDoc.obj_token;
+    const doc_info = await this.feitchDocInfo(document_id);
     const blocks = await this.feitchDocBlocks(document_id);
     const render_doc = {
       document: {
@@ -237,24 +263,27 @@ export class FeishuDocHelp {
       const match_res = reg_patt.exec(render.head_img);
       if (match_res.length >= 2) cover_token = match_res[1].trim();
     }
-    for (const filetoken in render.fileTokens) {
-      const file_res = await this.downloadFile(filetoken, pic_path);
-      let extension = mime.extension(file_res.headers["content-type"]);
-      let pic_full_path = path.join(pic_path, `${filetoken}.${extension}`);
-      const base_url = "/";
-      let assetURL = base_url + path.relative(path.dirname(filepath), pic_full_path);
-      assetURL = assetURL.replace("\\", "/");
-      if (filetoken == cover_token) {
-        meta["cover"] = assetURL;
-        continue;
-      }
-      content = replaceLinks(content, filetoken, assetURL);
+    if (doc_info.cover && doc_info.cover.token) {
+      cover_token = doc_info.cover.token;
+      render.addFileToken("image", cover_token);
     }
-    meta["create_time"] = parseInt(fileDoc.node_create_time);
+    for (const filetoken in render.fileTokens) {
+      if (filetoken) {
+        const assetURL = await this.DownFile(filetoken, pic_path, filepath);
+        if (filetoken == cover_token) {
+          meta["cover"] = assetURL;
+          continue;
+        }
+        content = replaceLinks(content, filetoken, assetURL);
+      }
+    }
+    meta["create_time"] = parseInt(fileDoc.obj_create_time);
+    meta["edit_time"] = parseInt(fileDoc.obj_edit_time);
     meta["title"] = meta.title || fileDoc.title;
     // meta["cover"] = meta.cover || "/normal_cover.png";
     if (category) meta["categories"] = meta.categories || [category.trim().toLowerCase()];
     const head_text = this.genMetaText(meta);
+    console.log("meta", meta);
     if (meta.hide == true && isindex) content = head_text;
     else content = head_text + "\n\n" + content;
     fs.writeFileSync(filepath, content);
